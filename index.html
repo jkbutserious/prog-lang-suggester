@@ -25,12 +25,39 @@
             <option value="2">Business applications</option>
             <option value="3">Games</option>
           </select>
-          <label></label>
-          <div class="radio">
-            <label>
-              <input type="radio" name="open-or-closed" value="open-source">
-              Open source
-            </label>
+          <div>
+            <label>Do you prefer a language that is open-source or closed-source?</label>
+            <div class="radio">
+              <label>
+                <input type="radio" name="open-closed" value="open">
+                Open source
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="open-closed" value="closed">
+                Closed source
+              </label>
+            </div>
+          </div>
+          <div>
+            <label>Do you want to program for mobile or desktop?</label>
+            <div class="radio">
+              <label>
+                <input type="radio" name="app-type" value="mobile">
+                Mobile
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="app-type" value="desktop">
+                Desktop
+              </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="favorite-movie">What is your favorite movie? (It doesn't have to be programming-related!)</label>
+            <input id="favorite-movie" class="form-control" type="text">
           </div>
         </form>
       </div>
