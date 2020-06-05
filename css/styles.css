@@ -1,9 +1,7 @@
 body {
-  /* font-family: georgia, sans-serif; */
   font-family: "lucida console";
   font-size: 20px;
   color: #fff;
-  /* background-color: #C879B2; */
   background-color: #0D2C40;
 }
 
@@ -20,13 +18,11 @@ body {
 
 .container {
   background-color: #0D2C40;
-  /* padding: 1rem; */
 }
 
 .panel {
   margin: 2rem 0 2rem 0;
   padding: 1rem;
-  /* border-radius: 2rem; */
 }
 
 .question1 {
