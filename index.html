@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Programming Language Suggester</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Which Programming Language is Right for You?</h1>
+      <p>Answer the following questions to determine which programming language you should learn:</p>
+
+      <div class="form-container">
+        <form id="prog-quiz">
+          <div class="form-group">
+            <label for="years-exp">How many years of programming experience do you have?</label>
+            <input id="years-exp" class="form-control" type="text">
+          </div>
+          <label for="objective">What do you want to program?</label>
+          <select class="form-control" id="objective">
+            <option value="1">Web sites</option>
+            <option value="2">Business applications</option>
+            <option value="3">Games</option>
+          </select>
+          <label></label>
+          <div class="radio">
+            <label>
+              <input type="radio" name="open-or-closed" value="open-source">
+              Open source
+            </label>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </body>
+</html>
