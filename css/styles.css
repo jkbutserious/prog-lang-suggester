@@ -1,5 +1,7 @@
 body {
   font-family: georgia, sans-serif;
+  font-size: 20px;
+  background-color: #C879B2;
 }
 
 .container {
@@ -7,17 +9,30 @@ body {
   color: #fff;
 }
 
+
+
 .panel {
   margin: 5rem 0 5rem 0;
   padding: 2rem;
 }
 
-#question1 {
+.question1 {
   background-color: #F15B31;
+  height: 100%;
 }
 
-#question2 {
+.question2 {
   background-color: #3AC2D8;
+  height: 100%;
+}
+
+.answer1 {
+  background-color: #3AC2D8;
+  height: 100%;
+}
+
+.answer2 {
+  background-color: #F15B31;
 }
 
 #submit-button {
@@ -30,4 +45,5 @@ body {
   /* display: none; */
   margin: 10rem 0 10rem 0;
   background-color: #C879B2;
+  border-radius: 2rem;
 }
