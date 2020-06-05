@@ -17,26 +17,32 @@
         <form id="prog-quiz">
           <div class="form-group">
             <label for="years-exp">How many years of programming experience do you have?</label>
-            <input id="years-exp" class="form-control" type="text">
+            <select class="form-control" id="years-exp">
+              <option value="1">0-1</option>
+              <option value="2">1-5</option>
+              <option value="3">5+</option>
+            </select>
           </div>
-          <label for="objective">What do you want to program?</label>
-          <select class="form-control" id="objective">
-            <option value="1">Web sites</option>
-            <option value="2">Business applications</option>
-            <option value="3">Games</option>
-          </select>
+          <div class="form-group">
+            <label for="objective">What do you want to program?</label>
+            <select class="form-control" id="objective">
+              <option value="1">Web sites</option>
+              <option value="2">Business applications</option>
+              <option value="3">Games</option>
+            </select>
+          </div>
           <div>
             <label>Do you prefer a language that is open-source or closed-source?</label>
             <div class="radio">
               <label>
                 <input type="radio" name="open-closed" value="open">
-                Open source
+                Open-source
               </label>
             </div>
             <div class="radio">
               <label>
                 <input type="radio" name="open-closed" value="closed">
-                Closed source
+                Closed-source
               </label>
             </div>
           </div>
