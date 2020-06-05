@@ -9,7 +9,9 @@ $(document).ready(function() {
     const appType = $("input:radio[name=app-type]:checked").val();
     const favMovie = $("input#favorite-movie").val();
 
-    $("#output").fadeToggle();
+    $("#result").fadeIn();
+    $("#explanation").fadeIn();
+    $("#movie").fadeIn();
     
     if (experience === 1) {
       $("#result").text("C++");

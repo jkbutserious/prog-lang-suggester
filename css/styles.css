@@ -17,7 +17,7 @@ body {
 }
 
 .panel {
-  margin: 5rem 0 5rem 0;
+  margin: 2rem 0 2rem 0;
   padding: 2rem;
 }
 
@@ -56,8 +56,19 @@ body {
 }
 
 #output {
-  display: none;
   margin: 10rem 0 10rem 0;
   background-color: #C879B2;
   border-radius: 2rem;
+}
+
+#result {
+  display: none;
+}
+
+#explanation {
+  display: none;
+}
+
+#movie {
+  display: none;
 }
