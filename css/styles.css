@@ -3,28 +3,36 @@ body {
   font-family: "lucida console";
   font-size: 20px;
   color: #fff;
-  background-color: #C879B2;
+  /* background-color: #C879B2; */
+  background-color: #0D2C40;
 }
 
 .jumbotron {
   background-image: url("/img/keyboard.jpg");
   font-family: "lucida console";
-  padding: 2rem;
+  margin: 0;
+  padding: 1rem;
+}
+
+.jumbotron h1 {
+  font-size: 50px;
 }
 
 .container {
   background-color: #0D2C40;
+  /* padding: 1rem; */
 }
 
 .panel {
   margin: 2rem 0 2rem 0;
-  padding: 2rem;
+  padding: 1rem;
+  /* border-radius: 2rem; */
 }
 
 .question1 {
   background-color: #F15B31;
   line-height: 1.25;
-  height: 10rem;
+  height: 7.5rem;
 }
 
 .question2 {
@@ -36,7 +44,7 @@ body {
 .answer1 {
   background-color: #3AC2D8;
   line-height: 1.25;
-  height: 10rem;
+  height: 7.5rem;
 }
 
 .answer2 {
@@ -53,12 +61,13 @@ body {
   display: block;
   max-width: 20rem;
   margin: auto;
+  font-size: 20px;
+  font-weight: strong;
 }
 
 #output {
-  margin: 10rem 0 10rem 0;
+  margin: 5rem 0 10rem 0;
   background-color: #C879B2;
-  border-radius: 2rem;
 }
 
 #result {
