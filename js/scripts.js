@@ -9,8 +9,6 @@ $(document).ready(function() {
     const appType = $("input:radio[name=app-type]:checked").val();
     const favMovie = $("input#favorite-movie").val();
     
-    event.preventDefault();
-
     if (experience === 1) {
       $("#result").text("C++");
       $("#explanation").text("Many object-oriented programming languages are based on C++ and the knowledge you gain will provide a good foundation for your programming journey.");
@@ -28,9 +26,17 @@ $(document).ready(function() {
         $("#result").text("Java");
         $("#explanation").text("Java is an extremely versatile language that is used in many of the most popular applications and games. Learning Java is a great place to start, even if you are considering learning more specialized languages for game development.");
       }
+      // The answer to question 4 is ignored for the purposes of a result
     }
 
-    $("#movie").text("Also, people who enjoy " + favMovie + " love learning this language!")
+    if (favMovie) {
+      $("#movie").text("Also, people who enjoy " + favMovie + " love learning this language!");
+    }
+    else {
+      $("#movie").text("But, since you didn't tell me your favorite movie, we'll never know if you'll enjoy learning this language, or not...");
+    }
+
+    event.preventDefault();
 
   });
 });

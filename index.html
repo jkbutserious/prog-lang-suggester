@@ -15,61 +15,94 @@
 
       <div class="form-container">
         <form id="prog-quiz">
-          <div class="form-group">
-            <label for="years-exp">How many years of programming experience do you have?</label>
-            <select class="form-control" id="years-exp">
-              <option value="1">0-1</option>
-              <option value="2">1-5</option>
-              <option value="3">5+</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="objective">What do you want to program?</label>
-            <select class="form-control" id="objective">
-              <option value="1">Web sites</option>
-              <option value="2">Business applications</option>
-              <option value="3">Games</option>
-            </select>
-          </div>
-          <div>
-            <label>Do you prefer a language that is open-source or closed-source?</label>
-            <div class="radio">
-              <label>
-                <input type="radio" name="open-closed" value="open">
-                Open-source
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="open-closed" value="closed">
-                Closed-source
-              </label>
+          <div class="panel">
+            <div class="row">
+              <div class="col-md-6">
+                <label for="years-exp">How many years of programming experience do you have?</label>
+              </div>
+              <div class="col-md-6">
+                <select class="form-control" id="years-exp">
+                  <option value="1">0-1</option>
+                  <option value="2">1-5</option>
+                  <option value="3">5+</option>
+                </select>
+              </div>
             </div>
           </div>
-          <div>
-            <label>Do you want to program for mobile or desktop?</label>
-            <div class="radio">
-              <label>
-                <input type="radio" name="app-type" value="mobile">
-                Mobile
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="app-type" value="desktop">
-                Desktop
-              </label>
+          <div class="panel">
+            <div class="row">
+              <div class="col-md-6">
+                <label for="objective">What do you want to program?</label>
+              </div>
+              <div class="col-md-6">
+                <select class="form-control" id="objective">
+                  <option value="1">Web sites</option>
+                  <option value="2">Business applications</option>
+                  <option value="3">Games</option>
+                </select>
+              </div>
             </div>
           </div>
-          <div class="form-group">
-            <label for="favorite-movie">What is your favorite movie? (It doesn't have to be programming-related!)</label>
-            <input id="favorite-movie" class="form-control" type="text">
+          <div class="panel">
+            <div class="row">
+              <div class="col-md-6">
+                <label>Do you prefer a language that is open-source or closed-source?</label>
+              </div>
+              <div class="col-md-6">
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="open-closed" value="open" checked>
+                    Open-source
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="open-closed" value="closed">
+                    Closed-source
+                  </label>
+                </div>
+              </div>
+            </div>
           </div>
-          <button class="btn" type="submit">Submit answers</button>
+          <div class="panel">
+            <div class="row">
+              <div class="col-md-6">
+                <label>Do you want to program for mobile or desktop?</label>
+              </div>
+              <div class="col-md-6">
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="app-type" value="mobile" checked>
+                    Mobile
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="app-type" value="desktop">
+                    Desktop
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="panel">
+
+            <div class="form-group">
+              <div class="row">
+                <div class="col-md-6">
+                  <label for="favorite-movie">What is your favorite movie? (It doesn't have to be programming-related!)</label>
+                </div>
+                <div class="col-md-6">
+                  <input id="favorite-movie" class="form-control" type="text">
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="btn" id="submit-button" type="submit">Submit answers</button>
         </form>
       </div>
 
-      <div id="output">
+      <div class="panel" id="output">
         <h2>You should consider learning:</h2>
         <h2><span id="result"></span></h2>
         <p><span id="explanation"></span></p>
