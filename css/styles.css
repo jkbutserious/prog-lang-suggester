@@ -1,9 +1,33 @@
+body {
+  font-family: georgia, sans-serif;
+}
+
+.container {
+  background-color: #0D2C40;
+  color: #fff;
+}
+
 .panel {
   margin: 5rem 0 5rem 0;
-  padding: 2rem 0 2rem 0;
+  padding: 2rem;
 }
+
+#question1 {
+  background-color: #F15B31;
+}
+
+#question2 {
+  background-color: #3AC2D8;
+}
+
 #submit-button {
   display: block;
   max-width: 20rem;
   margin: auto;
+}
+
+#output {
+  /* display: none; */
+  margin: 10rem 0 10rem 0;
+  background-color: #C879B2;
 }
