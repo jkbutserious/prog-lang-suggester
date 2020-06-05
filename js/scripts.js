@@ -8,6 +8,8 @@ $(document).ready(function() {
     const sourceType = $("input:radio[name=open-closed]:checked").val();
     const appType = $("input:radio[name=app-type]:checked").val();
     const favMovie = $("input#favorite-movie").val();
+
+    $("#output").fadeToggle();
     
     if (experience === 1) {
       $("#result").text("C++");
